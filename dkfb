@@ -683,7 +683,8 @@ def clone_dari_teman():
 	try:
 		jok = requests.get("https://graph.facebook.com/"+idt+"?access_token="+toket)
 		op = json.loads(jok.text)
-		print"\033[1;96m[\033[1;97m✓\033[1;96m] \033[1;93mNama\033[1;91m :\033[1;97m "+op["name"]
+		print"\033[1;96m[\033[1;97m✓\033[1;96m] \033[1;93mNama Kalian
+		\033[1;91m :\033[1;97m "+op["name"]
 	except KeyError:
 		print"\033[1;96m[!] \x1b[1;91mTeman tidak ditemukan"
 		raw_input("\n\033[1;96m[\033[1;97mKembali\033[1;96m]")
@@ -823,7 +824,7 @@ def clone_dari_file():
 		os.mkdir('out')
 	except OSError:
 		pass
-	os.system('clear')
+	os.system('clear') pada
 	print logo
 	print 42*"\033[1;96m="
 	files = raw_input("\033[1;96m[+] \033[1;93mNama File \033[1;91m: \033[1;97m")
